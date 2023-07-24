@@ -1,0 +1,60 @@
+﻿body {
+    background: #f0ece2;
+    background-size: cover;
+}
+
+.headline {
+    color: red;
+    text-align: center;
+}
+
+.coffeeBeans {
+    background-color: #8b451357;
+    display: flex;
+    width: 100%;
+    padding-bottom: 50px;
+    background-size: cover;
+    border: inset black 3px;
+    border-radius: 15px;
+}
+
+.leftDiv {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    align-items: center;
+    margin-top: 50px;
+}
+
+    .leftDiv > h3 {
+        text-align: center;
+        color: blue;
+    }
+
+    .leftDiv div > button {
+        background-color: orange;
+        color: white;
+        border: inset black 3px;
+        border-radius: 5px;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .leftDiv > img {
+        border: solid #867063 3px;
+        border-radius: 20px;
+    }
+
+    .rightDiv {
+        display: flex;
+        width: 50vw;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+
+    .rightDiv > p {
+        padding: 10px;
+        color: black;
+        font-size: 1.1rem;
+        font-family: cursive;
+    }

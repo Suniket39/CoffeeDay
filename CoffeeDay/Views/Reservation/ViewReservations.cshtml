@@ -1,0 +1,62 @@
+﻿@model IEnumerable<ReservationModel>
+@{
+}
+<html>
+    <head>
+    <link href="@Url.Content("../css/View.css")" type="text/css" rel="stylesheet" />
+        
+    </head>
+    <body>
+        <main class="mainContainer">
+            <section class="mainSection">
+                <div>
+                    <h1>Reservations</h1>
+                </div>
+            <div class="reservTable">
+                    <table>
+                        <thead class="reservTableHead">
+                            <tr>
+                                <th>Sr. No</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Persons</th>
+                                <th>Occasion</th>
+                                <th>Message</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                                
+                            </tr>
+                        </thead>
+                    <tbody class="reservTableBody">
+                        @foreach (var obj in Model)
+                        {
+                            <tr>
+                                <td>@obj.Id</td>
+                                <td>@obj.name</td>
+                                <td>@obj.email</td>
+                                <td>@obj.tablefor</td>
+                                <td>@obj.occasion</td>
+                                <td>@obj.message</td>
+                                
+                                <td>
+                                    <div>
+                                        <a asp-controller="Reservation"
+                                        asp-action="EditReservation" asp-route-id="@obj.Id">Edit</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <a asp_controller="Reservation"
+                                            asp-action="DeleteReservation"
+                                            asp-route-id="@obj.Id">Delete</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

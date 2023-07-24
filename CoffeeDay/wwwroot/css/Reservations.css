@@ -1,0 +1,65 @@
+﻿.MainSection {
+    background-image: url(../Images/homebg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.mainDiv {
+    background-color: #6c5340e3;
+    opacity: 0.80;
+    border: solid #79554987 8px;
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    left: 30%;
+    padding: 10px 0 10px 0;
+}
+
+#heading {
+    text-align: center;
+    color: #1900c5;
+}
+
+
+.reservForm {
+    display: flex;
+    padding: 0px 0px 0px 0px;
+}
+
+.bookTable {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 10px 0 20px 0;
+}
+
+    .bookTable > label {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2rem;
+        color: orange;
+        text-align: center;
+        padding: 5px;
+    }
+    .bookTable > span{
+        color: red;
+        text-align:center;
+    }
+
+.fields {
+    border-radius: 5px;
+    margin: auto;
+    width: 20vw;
+    padding: 5px 10px;
+    border: solid #f395b387 4px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}

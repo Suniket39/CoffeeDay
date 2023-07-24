@@ -1,0 +1,47 @@
+﻿body {
+    background-image: url(../Images/homebg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.mainContainer {
+    opacity: 0.9;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+}
+
+.mainSection {
+    color: red;
+    display: flex;
+    background-color: #784a4aa3;
+    width: 60vw;
+    padding: 0 0 40px 0;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    border: solid #6824244d 5px;
+    border-radius: 25px;
+}
+
+.reservTable {
+    background-color: #49040461;
+    margin: auto;
+    padding: 30px;
+    border: solid #682424b5 5px;
+    border-radius: 25px;
+}
+
+.reservTableHead tr th {
+    color: white;
+    border: solid #efd898 3px;
+}
+
+.reservTableBody tr td {
+    color: white;
+    border: groove #efd898 3px;
+}
